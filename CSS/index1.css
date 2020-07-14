@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  body {
+    background-color:white;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  } 
+  a{
+    text-decoration: none;
+  }
+  /* ---- header styles*/
+  .header_content{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    width: 100%;
+    margin:0;
+    min-height: 80px;
+    background-color:white;
+    border-bottom: 2px solid firebrick;
+  }
+  .openNav{
+    font-size: 30px;
+    color:black;
+    display: none;
+    margin: 0 0 0 8%;
+    cursor: pointer;
+  }
+  .closebtn a{
+    float: right;
+    display: none;
+    font-size: 30px;
+    margin-right: 18%;
+    color:black; 
+  }
+  .logo_div{
+      line-height: 80px;
+      margin: 0 0 0 10%;
+  }
+  .main_title{
+    line-height: 80px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .main_title span{
+      color:firebrick;
+  }
+  .menu_bar{
+    right: 0;
+    position: absolute;
+  }
+  .menu_bar li{
+  float: left;
+  padding: 0 2px 0 0;
+  list-style: none;
+  line-height: 80px;
+  font-size: 16px;
+  }
+  .menu_bar li a{
+      width: 110px;
+      height: 80px;
+      text-align: center;
+      display: block;
+      color:black;
+  }
+  .menu_bar li a:hover{
+      color: #973129;
+  }
+  /*----- main content style*/
+  .main_content{
+      margin: 0 3% 0 3%;
+      min-height: 460px;
+  }
+  .getStartedDiv a{
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    background-color:#e2dcdc;
+    box-shadow:1px 3px 1px 0px grey;
+    text-align: center;
+    line-height: 50px;
+    margin: 20%;
+  }
+  .homeContent{
+    font-size: 20px;
+    margin: 5%;
+  }
+  
+  /*---- footer style*/
+  .footer_contentDiv{
+    position:relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    min-height: 120px;
+    background-color: #252323;
+  }
+  .footer_contentDiv h3{
+    text-align: center;
+  }
+  input[type=text], input[type=password],input[type=email]{
+    width: 50%;
+    padding: 1px 1px 1px 15px;
+    min-height: 30px;
+    box-shadow: 0px 0px 1px 1px wheat;
+    border: none;
+    margin: 1% 0 1% 25%;
+    border-radius: 5px; 
+    font-size: 14px;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    margin: 1% 0 1% 25%;
+    min-height: 35px;
+    width: 52%;
+  }
+  input[type=text]:focus, input[type=password]:focus{
+    box-shadow: 0px 0px 2px 2px whitesmoke; 
+  }
+  .text-field{
+    display: block;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 50%;
+    border-radius: 10px;
+    padding: 1% 0 1% 0;
+    margin: 1% 27% 1% 25% ;
+  }
+  .main_text{
+    font-size: 20px;
+    margin: 1% 0 0 37%;
+    padding: 0 0 3% 0;
+  }
+  .text_form{
+    margin: 0 0 0 25%;
+    font-size: 14px;
+    padding: 1px 0 2px 0;
+  }
+  .linkText{
+    font-size: 14px;
+    margin: 1% 0 1% 25%;
+  }
+  /* --- map div */
+  .Map_div{
+    margin: 5% 0 1% 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .Map_div iframe{
+    width: 95%;
+    margin: 1% 0 1% 2%;
+  }
+  /* --- park div style */
+  
+  .park_div{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 90%;
+    border: 2px solid whitesmoke;
+    margin: 1% 0 2% 5%;
+    min-height:200px;
+    border-radius:5px;
+  }
+  .park{
+    width: 96%;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    margin: 1% 1% 1% 1%;
+    min-height:150px;
+    border-radius:5px;
+    padding: 5px 0 10px 20px;
+    border:1px solid whitesmoke;
+  }
+  .park_name,.park_photo,.park_seat{
+    margin: 1% 1% 1% 1%;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 15px 0 10px 20px;
+  }
+  .park_place{
+  background-color:#f9f9f9;
+  margin: 2% 5% 0 5%;
+  min-height:60px;
+  padding: 10px 0 15px 25px;
+  }
+  .park_place span{
+    margin: 0 0 0 20%;
+  }
+  #book_btn{
+  margin: 2% 0 0 20%;
+  width: 120px;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  #booked_btn{
+    margin: 2% 0 0 20%;
+  width: 120px;
+  border-radius: 5px;
+  display: none;
+  
+  }
+  /* --- validation  */
+  #result{
+    color: green;
+    margin: 1% 0 1% 25%;
+    padding: 10px 20px 10px 5px;
+  }
+  #message {
+    display:none;
+    margin: 1% 0 1% 25%;
+    background-color: white;
+    color: #000;
+    position: relative;
+    padding: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  /* Iframe style park div */
+  iframe{
+    width: 200px;
+    height: 300px;
+  }
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  .user_profile{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10% 0 0 5%;
+    border-radius: 50%;
+    padding: 8px 0 0 0;
+    background-color: grey;
+    cursor: pointer;
+  }
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+  /*---- media queries*/
+  @media screen and (max-width: 360px) {
+    .Map_div{
+      display: block;
+    }
+    .openNav{
+        display: block;
+    }
+    .logo_div{
+        display: none;
+    }
+    .header_content{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        line-height: 80px;
+        height: 80px;
+    }
+    .menu_bar{
+        left: 0;
+        width:0;
+        position: absolute;
+        background-color: whitesmoke;
+        top: 80px;
+        z-index: 1;
+        overflow-x: hidden; 
+        height: 100%;
+        transition: 0.5s;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+    .menu_bar li{
+        float: none;
+        padding: 0 2px 0 20%;
+        list-style: none;
+        text-align: center;
+        line-height: 80px;
+     }
+     .menu_bar li a{
+      height: 60px;
+      font-size: 14px;
+      text-align: left;
+  }
+  input[type=text], input[type=password],input[type=email]{
+    width: 80%;
+    margin: 1% 0 1% 10%;
+  }
+  input[type=submit] {
+    margin: 1% 0 1% 10%;
+    width:80%;
+    font-size: 14px;
+    min-height: 25px;
+  }
+  .linkText{
+    margin: 1% 0 1% 10%;
+  }
+  .text_form{
+    margin: 0 0 0 10%;
+  }
+  .text-field{
+    width: 100%;
+    margin: 0;
+  }
+ .closebtn a{
+        display: block;
+      }
+  .footer_content{
+    display: block;
+    text-align:left;
+  }
+  .text-field{
+    width: 100%;
+    margin: 0;
+    }
+    .main_text{
+      margin: 5% 0 10% 10%;
+      font-size: 18px;
+      }
+      .main_content{
+        margin: 0 3% 10% 3%;
+        min-height: 450px;
+    }
+    .park_div{
+      display: block;
+    }
+    .park{
+      margin:1% 1% 2% 1%;
+      width: 90%;
+      display: block;
+    }
+    .park_place{
+      margin: 2% 5% 0 1%;
+      }
+      .park_name,.park_photo,.park_seat{
+        padding:0;
+      }
+   
+  } 
+  @media only screen and (max-width: 670px) and (min-width: 361px){
+    .Map_div{
+      display: block;
+    }
+    .openNav{
+      display: block;
+  }
+  .logo_div{
+    display: none;
+}
+.header_content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    line-height: 80px;
+    height: 80px;
+}
+.menu_bar{
+    left: 0;
+    width:0;
+    position: absolute;
+    background-color: whitesmoke;
+    top: 80px;
+    z-index: 1;
+    overflow-x: hidden; 
+    height: 100%;
+    transition: 0.5s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .menu_bar li{
+    float: none;
+    padding: 0 2px 0 20%;
+    list-style: none;
+    text-align: center;
+    line-height: 80px;
+ }
+ .menu_bar li a{
+  height: 60px;
+  font-size: 14px;
+  text-align: left;
+}
+input[type=text], input[type=password],input[type=email]{
+  width: 80%;
+  margin: 1% 0 1% 10%;
+}
+input[type=submit] {
+  margin: 1% 0 1% 10%;
+  width:80%;
+  font-size: 14px;
+  min-height: 25px;
+}
+.text-field{
+  width: 100%;
+  margin: 0;
+}
+.linkText{
+  margin: 1% 0 1% 10%;
+}
+.text_form{
+  margin: 0 0 0 10%;
+}
+.main_text{
+  margin: 5% 0 10% 10%;
+  font-size: 18px;
+  }
+.closebtn a{
+      display: block;
+    }
+    .park_div{
+      display: block;
+    }
+    .park{
+      margin:1% 1% 2% 1%;
+      width: 90%;
+      display: block;
+    }
+    .park_place{
+      margin: 2% 5% 0 1%;
+      }
+      .park_name,.park_photo,.park_seat{
+        padding:0;
+      }
+  }
+  @media only screen and (max-width: 870px) and (min-width: 671px){
+    #book_btn{
+  margin: 2% 0 0 5%;
+  width: 100px;
+    }
+
+  }
